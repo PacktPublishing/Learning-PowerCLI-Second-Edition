@@ -9,10 +9,16 @@ All of the code is organized into folders. Each folder starts with a number foll
 
 The code will look like the following:
        
-       aws-region = "us-east-1"
-       vpc-cidr = "10.0.0.0/16"
-       vpc-name = "Terraform"
-       aws-availability-zones = "us-east-1b,us-east-1c"
+      # Define the variables
+      $HostName = '192.168.0.132'
+      $iSCSITarget = '192.168.0.135'
+      $VirtualSwitchName = 'vSwitch2'
+      $NicName = 'vmnic3'
+      $PortGroupName = 'iSCSI Port group 1'
+      $ChapType = 'Preferred'
+      $ChapUser = 'Cluster01User'
+      $ChapPassword = 'Cluster01Password'
+      $DatastoreName = 'Cluster01_iSCSI01'
 
 There are no code files for the following chapters:
 
@@ -24,11 +30,8 @@ There are no code files for the following chapters:
 - **Chapter 12** 
 
 ### Software requirements:
-The practical examples found in this book involve the use of AWS resources, thus an AWS
-account will be required.
-
-The client-side tools used in the examples, such as the AWS CLI and Terraform, are
-supported on most common operating systems (Linux/Windows/Mac OS).
+If you don't have specific software installed, you can use the VMware Hands-on Labs at https://labs.hol.vmware.com/ to test the scripts. The scripts in this book are tested using VMware vSphere PowerCLI 6.5 Release 1, VMware
+vCenter Server 6.5, and VMware ESXi 6.5. Windows PowerShell and VMware PowerCLI are free. You can download a free 60-day evaluation of VMware vCenter Server and VMware ESXi from the VMware website. It is not possible to modify the settings on the free VMware vSphere Hypervisor using PowerCLI.
 
 Here is the list of softwares used in the book:
        
